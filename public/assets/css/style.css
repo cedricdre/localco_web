@@ -1,0 +1,55 @@
+body {
+    font-family: 'Lato', sans-serif;
+    color: #1A4E24; /* A MODIFIER AVEC SCSS */
+}
+
+/* Typo */
+.title-lilita {
+    font-family: 'Lilita One', sans-serif;
+}
+
+/* Enlève la bordure au clic */
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+footer .accordion {
+    background-color: #000!important;
+}
+
+/* Navbar Style mobil */
+#navbarNav ul {
+    padding: 1rem 0;
+}
+#navbarNav li {
+    border-bottom: 1px solid rgba(26, 78, 36, 0.2);
+    font-size: 1.5rem;
+    padding: 0.2rem 0;
+    font-weight: 700;
+}
+#navbarNav li a {
+    color: #1A4E24; /* A MODIFIER AVEC SCSS */
+}
+/* Navbar Style desktop */
+@media all and (min-width: 992px) {
+    #navbarNav ul {
+        padding: 0;
+    }
+    #navbarNav li {
+        border-bottom:none;
+        font-size: 16px;
+        padding: 0 0.2rem;
+        font-weight: 700;
+    }   
+    #navbarNav li a:hover {
+        color: rgba(26, 78, 36, 0.6); /* A MODIFIER AVEC SCSS */
+    }
+}
+
+/* Footer */
+.legal-foot {
+    font-size: 0.8rem;
+}
