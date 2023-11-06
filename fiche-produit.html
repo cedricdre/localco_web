@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Typo -->
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Styles css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Styles css -->
+    <link rel="stylesheet" href="./public/assets/css/custom.css">
+    <title>Localco</title>
+</head>
+<body>
+<!-- header -->
+<header>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand order-lg-1" href="#">
+                <img src="./public/assets/img/logo-localco.svg" alt="Logo Localco" height="35">
+            </a> 
+            <div class="d-flex align-items-center order-lg-3">
+                <a class="nav-link link-success fs-4 mx-1 position-relative" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><i class="bi bi-bag-fill"></i>
+                    <!-- A afficher quand un article dans le panier -->
+                    <span class="position-absolute top-0 start-100 translate-middle-x p-2 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">Article dans le panier</span>
+                    </span>
+                </a>
+                <a class="nav-link link-success fs-4 mx-2 d-none d-lg-block" href="#"><i class="bi bi-person-fill"></i></a>
+                <button class="navbar-toggler border-0 pe-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-2 justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Le Projet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Catalogue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Abonnement</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Lieu de retrait</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Les Producteurs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Le Blog</a>
+                    </li>
+                </ul>
+                <div class="text-center pb-4 d-lg-none">
+                    <a class="nav-link link-success text-uppercase" href="#"><i class="bi bi-person-circle me-1"></i>Mon compte</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header><!-- FIN header -->
+<!-- main -->
+<main>
+    <!-- section Fiche produit -->
+    <section class="py-4 py-lg-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <img src="./public/assets/img/pomme-off.jpg" class="img-fluid rounded-3" alt="Photo de Shelley Pauls">
+                </div>
+                <div class="col-12 col-lg-7">
+                    <h1>Nom du produits</h1>
+                    <p class="small fw-light opacity-75">500g</p>
+                    <div class="d-grid mb-4">
+                        <button class="btn btn-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomPrice" aria-controls="offcanvasBottomPrice">Ajouter au panier</button>
+                    </div>
+                    <h5>Description</h5>
+                    <p>Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium primum, qui divertebat in proximo, levi corpore senem atque morbosum, et hirsutis resticulis cruribus eius innexis divaricaturn sine spiramento ullo ad usque praetorium traxere praefecti.</p>
+                    <h5>Origine</h5>
+                    <p>Produit à <span class="fw-bolder">00</span> km, <span class="fw-bolder">Nom de la ville</span></p>
+                    <!-- A afficher si seulement le cas -->
+                    <h5>Méthode de production</h5>
+                    <button class="btn btn-sm btn-outline-success" disabled>BIO</button>
+                </div>
+            </div>
+
+            <!-- A découvrir également -->
+            <div class="py-5">
+                <div class="row g-3">
+                    <h2 class="text-center fs-1 mb-4">À <span class="text-bg-warning p-1">découvrir</span> également</h2>
+                    <!-- Card produit -->            
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-3 h-100">
+                            <img src="./public/assets/img/pomme-off.jpg" class="img-cover-card-product object-fit-cover rounded-3" alt="Photo de Shelley Pauls">
+                            <div class="card-body text-success text-center pb-0">
+                                <h5 class="fw-bolder mb-1 fs-6"><a href="" class="link-success text-decoration-none">Nom du produit <span class="badge rounded-pill text-bg-success">BIO</span></a></h5>
+                                <p class="small fw-light opacity-75 mb-0">500g</p>
+                                <p class="small fw-light opacity-75">Nom du producteur</p>
+                                <h6 class="card-title fs-5 fw-bolder mb-0">0,00 <sup>€</sup></h6>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                                <div class="d-grid">
+                                    <button class="btn btn-sm btn-warning rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomPrice" aria-controls="offcanvasBottomPrice">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                  
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-3 h-100">
+                            <img src="./public/assets/img/salade-off.jpg" class="img-cover-card-product object-fit-cover rounded-3" alt="Photo de Shelley Pauls">
+                            <div class="card-body text-success text-center pb-0">
+                                <h5 class="fw-bolder mb-1 fs-6"><a href="" class="link-success text-decoration-none">Nom du produit sur 2 lignes <span class="badge rounded-pill text-bg-success">BIO</span></a></h5>
+                                <p class="small fw-light opacity-75 mb-0">500g</p>
+                                <p class="small fw-light opacity-75">Nom du producteur</p>
+                                <h6 class="card-title fs-5 fw-bolder mb-0">0,00 <sup>€</sup></h6>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                                <div class="d-grid">
+                                    <button class="btn btn-sm btn-warning rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomPrice" aria-controls="offcanvasBottomPrice">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-3 h-100">
+                            <img src="./public/assets/img/pomme-off.jpg" class="img-cover-card-product object-fit-cover rounded-3" alt="Photo de Shelley Pauls">
+                            <div class="card-body text-success text-center pb-0">
+                                <h5 class="fw-bolder mb-1 fs-6"><a href="" class="link-success text-decoration-none">Nom du produit sur 2 lignes <span class="badge rounded-pill text-bg-success">BIO</span></a></h5>
+                                <p class="small fw-light opacity-75 mb-0">500g</p>
+                                <p class="small fw-light opacity-75">Nom du producteur</p>
+                                <h6 class="card-title fs-5 fw-bolder mb-0">0,00 <sup>€</sup></h6>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                                <div class="d-grid">
+                                    <button class="btn btn-sm btn-warning rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomPrice" aria-controls="offcanvasBottomPrice">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="card rounded-3 h-100">
+                            <img src="./public/assets/img/salade-off.jpg" class="img-cover-card-product object-fit-cover rounded-3" alt="Photo de Shelley Pauls">
+                            <div class="card-body text-success text-center pb-0">
+                                <h5 class="fw-bolder mb-1 fs-6"><a href="" class="link-success text-decoration-none">Nom du produit sur 2 lignes <span class="badge rounded-pill text-bg-success">BIO</span></a></h5>
+                                <p class="small fw-light opacity-75 mb-0">500g</p>
+                                <p class="small fw-light opacity-75">Nom du producteur</p>
+                                <h6 class="card-title fs-5 fw-bolder mb-0">0,00 <sup>€</sup></h6>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                                <div class="d-grid">
+                                    <button class="btn btn-sm btn-warning rounded-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottomPrice" aria-controls="offcanvasBottomPrice">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- offcanvas choix quantité -->
+                <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" tabindex="-1" id="offcanvasBottomPrice" aria-labelledby="offcanvasBottomPriceLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title fw-bolder" id="offcanvasBottomLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-success">
+                        <h5 class="text-center mb-4 fw-bolder">Nom du produit</h5>
+                        <div class="row g-3 align-items-center justify-content-center">
+                            <div class="col-auto">
+                                <label for="inputQte" class="col-form-label">Choisir une quantité</label>
+                            </div>
+                            <div class="col-auto">
+                                <input type="number" value="1" min="1" max="10" id="inputQte" class="form-control border-success" aria-describedby="passwordHelpInline">
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="m-0 fw-bolder">0,00 <sup>€</sup></h5>
+                            </div>
+                            <div class="col-12 col-lg-auto">
+                                <div class="d-grid">
+                                    <button class="btn btn-warning rounded-5" type="button">Ajouter au panier</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- FIN offcanvas choix quantité -->            
+            </div>
+
+        </div>
+    </section><!-- FIN Fiche produit -->
+
+    <!-- Offcanvas PANIER -->
+    <div class="offcanvas offcanvas-end text-success" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <p class="offcanvas-title" id="offcanvasExampleLabel"><i class="bi bi-bag-fill fs-4 me-2"></i><span class="fs-4 title-lilita me-2">Mon panier</span>2 produit(s)</p>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <a class="btn btn-sm btn-outline-danger rounded-5 mb-2" href="#" role="button"><i class="bi bi-trash3-fill me-2"></i>Vider le panier</a>
+            <!-- Ligne produit panier Test 1 -->
+            <div class="border-bottom border-1 py-2">
+                <div class="row g-0 align-items-center justify-content-between">
+                    <div class="col-5">
+                        <p class="fw-bold mb-0">Nom du produit</p>
+                        <small class="small fw-light opacity-75 mb-0">500g</small>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" value="1" min="1" max="10" id="inputQte" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bolder mb-0">0,00 €</p>
+                    </div>
+                    <div class="col-1">
+                        <a href="" class="text-danger"><i class="bi bi-trash3-fill"></i></a>
+                    </div>
+                </div>
+            </div>   
+            <!-- Ligne produit panier Test 2 -->
+            <div class="border-bottom border-1 py-2">
+                <div class="row g-0 align-items-center justify-content-between">
+                    <div class="col-5">
+                        <p class="fw-bold mb-0">Nom du produit avec du texte sur 2 lignes</p>
+                        <small class="small fw-light opacity-75 mb-0">500g</small>
+                    </div>
+                    <div class="col-2">
+                        <input type="number" value="1" min="1" max="10" id="inputQte" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-2">
+                        <p class="fw-bolder mb-0">0,00 €</p>
+                    </div>
+                    <div class="col-1">
+                        <a href="" class="text-danger"><i class="bi bi-trash3-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas-header bg-success-subtle">
+            <p class="mb-0">Total : <span class="title-lilita fs-5">0,00 €</span></p>
+
+            <a class="btn btn-success rounded-5 icon-link icon-link-hover my-2 me-2" href="#">
+                Passer la commande
+                <i class="bi bi-chevron-right mb-2"></i>
+            </a>
+        </div>
+    </div><!-- FIN Offcanvas PANIER -->
+
+</main><!-- FIN main -->
+<!-- footer -->
+<footer class="bg-success py-5">
+    <div class="container">
+        <!-- accordion MENU-FOOTER Mobil -->
+        <div class="accordion accordion-flush d-lg-none" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        À propos
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse bg-success" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Titre</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Le concept
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse bg-success" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Titre</div>
+                </div>
+            </div>
+            <div class="accordion-item bg-success">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Contact
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse bg-success" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Titre</div>
+                </div>
+            </div>
+        </div><!-- FIN accordion MENU-FOOTER Mobil -->
+        <!-- MENU-FOOTER Desktop -->
+        <div class="d-none d-lg-block">
+            <div class="row">
+                <div class="col text-light">
+                    <h5 class="fw-bold mb-3">À propos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Le Projet</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Le Blog</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Support client</a></li>
+                    </ul>
+                </div>
+                <div class="col text-light">
+                    <h5 class="fw-bold mb-3">Le concept</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Catalogue</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Abonnement</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Les Producteurs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Lieu de retrait</a></li>
+                    </ul>
+                </div>
+                <div class="col text-light">
+                    <h5 class="fw-bold mb-3">Compte</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Gérer mon compte</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Gérer mon abonnement</a></li>
+                    </ul>
+                </div>
+                <div class="col text-light">
+                    <h5 class="fw-bold mb-3">Contact</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Nous contacter</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Devenir revendeur</a></li>
+                    </ul>
+                </div>
+                <div class="col text-light">
+                    <h5 class="fw-bold mb-3">Réseaux sociaux</h5>
+                    <ul class="nav flex-column">
+                        <div class="nav fs-4">
+                            <a class="link-light mx-2" href="#"><i class="bi bi-facebook"></i></a>
+                            <a class="link-light mx-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a class="link-light mx-2" href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- FIN MENU-FOOTER Desktop -->
+        <!-- Logo footer + Sociaux + mentions légales -->
+        <div class="text-center">
+            <img src="./public/assets/img/logo-localco-white.svg" class="my-5" height="50" alt="Logo Localco blanc">
+            <!-- Sociaux pour affichage mobil -->
+            <div class="nav justify-content-center mb-5 fs-2 d-lg-none">
+                <a class="link-light mx-2" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="link-light mx-2" href="#"><i class="bi bi-twitter-x"></i></a>
+                <a class="link-light mx-2" href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+            <ul class="nav justify-content-center legal-foot">
+                <li class="nav-item">
+                    <a class="nav-link link-light active">© 2023 Localco</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link-light" href="#">Mentions Légales</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer><!-- FIN footer -->
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

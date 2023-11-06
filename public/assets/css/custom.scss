@@ -1,9 +1,22 @@
-/* body {
-    font-family: 'Lato', sans-serif;
-    color: #1A4E24; /* A MODIFIER AVEC SCSS
-} */
+$font-family-sans-serif: 'Lato',system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
-/* Typo */
+// Couleurs
+$success: #1A4E24;
+$warning: #FBBA00;
+$body-color: #1A4E24;
+$link-color: $success;
+
+// Modification du border radius de tous les boutons bootstrap
+$btn-border-radius: 2rem;
+$btn-border-radius-sm: 2rem;
+$btn-border-radius-lg: 2rem;
+
+//input
+.form-control {
+    border: #1A4E24 1px solid !important;
+}
+
+// Typo
 .title-lilita {
     font-family: 'Lilita One', sans-serif;
 }
@@ -77,6 +90,30 @@ footer .accordion {
     font-size: 0.8rem;
 }
 
+.login-page-cover {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #fff;
+}
+.login-page-cover-img1 {
+    background-image: url('../img/pomme-off.jpg');
+}
+.login-page-cover-img2 {
+    background-image: url('../img/salade-off.jpg');
+}
 
 
+
+
+
+
+@import "../bootstrap/bootstrap.scss"
 
